@@ -25,7 +25,7 @@ This plugin adds the metadata provider for [Kitsu](https://kitsu.io).
 
 ## Build
 
-1. To build this plugin you will need [.Net 5.x](https://dotnet.microsoft.com/download/dotnet/5.0).
+1. To build this plugin you will need [.Net 7.x](https://dotnet.microsoft.com/download/dotnet/7.0).
 
 2. Build plugin with following command
   ```
