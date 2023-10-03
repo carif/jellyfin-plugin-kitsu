@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text.Json.Serialization;
 
-namespace Jellyfin.Plugin.Kitsu.Providers.KitsuIO.ApiClient.Models
+namespace Jellyfin.Plugin.Kitsu.ApiClient.Models
 {
     public class KitsuTitles
     {

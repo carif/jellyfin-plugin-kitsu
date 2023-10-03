@@ -1,4 +1,3 @@
-using Jellyfin.Plugin.Kitsu.Providers.KitsuIO.ApiClient.Models;
 using MediaBrowser.Common.Net;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +6,10 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using Jellyfin.Plugin.Kitsu.ApiClient.Models;
+using Jellyfin.Plugin.Kitsu.Converter;
 
-namespace Jellyfin.Plugin.Anime.Providers.KitsuIO.ApiClient
+namespace Jellyfin.Plugin.Kitsu.ApiClient
 {
     internal class KitsuIoApi
     {

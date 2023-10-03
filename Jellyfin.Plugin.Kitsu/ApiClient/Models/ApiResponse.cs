@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Jellyfin.Plugin.Kitsu.Providers.KitsuIO.ApiClient.Models
+namespace Jellyfin.Plugin.Kitsu.ApiClient.Models
 {
     public class ApiResponse<T>
     {

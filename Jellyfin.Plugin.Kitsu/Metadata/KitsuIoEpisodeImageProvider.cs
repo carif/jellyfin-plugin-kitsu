@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Jellyfin.Plugin.Anime.Providers.KitsuIO.ApiClient;
+using Jellyfin.Plugin.Kitsu.ApiClient;
 using MediaBrowser.Common.Net;
 using MediaBrowser.Controller.Entities;
 using MediaBrowser.Controller.Entities.TV;
@@ -10,7 +10,7 @@ using MediaBrowser.Controller.Providers;
 using MediaBrowser.Model.Entities;
 using MediaBrowser.Model.Providers;
 
-namespace Jellyfin.Plugin.Kitsu.Providers.KitsuIO.Metadata
+namespace Jellyfin.Plugin.Kitsu.Metadata
 {
     public class KitsuIoEpisodeImageProvider : IRemoteImageProvider
     {
@@ -26,7 +26,7 @@ namespace Jellyfin.Plugin.Kitsu.Providers.KitsuIO.Metadata
         {
             var httpClient = _httpClientFactory.CreateClient(NamedClient.Default);
 
-            return await httpClient.GetAsync(url).ConfigureAwait(false);
+            return await httpClient.GetAsync(url, cancellationToken).ConfigureAwait(false);
         }
 
         public async Task<IEnumerable<RemoteImageInfo>> GetImages(BaseItem item, CancellationToken cancellationToken)
